@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="WebOrders Automation" verbose="3" parallel="tests"	thread-count="2">
+
+
+
+
+	<test name="Login tests using FireFox">
+		<parameter name="browser" value="firefox"></parameter>
+		<packages>
+			<package name="com.cbt.tests.login"></package>
+		</packages>
+	</test>
+
+
+	<test name="Login tests using Chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<packages>
+			<package name="com.cbt.tests.login"></package>
+		</packages>
+	</test>
+
+</suite>
